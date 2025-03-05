@@ -1,9 +1,10 @@
-# Prog09: Create a program that print all the numbers starting from 0 to 100 except numbers ending in zero or ending five.
+# Prog08: Create a program that print all the odd numbers starting from 0 to 100. (Use while loop)
 
 nums = []
+i = 1
 
-for i in range(101):
-    if i%5 != 0:
-        nums.append(i)
+while i <= 100:
+    nums.append(i)
+    i += 2
 
 print(nums)
