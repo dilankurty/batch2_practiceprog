@@ -3,15 +3,8 @@
 nums = []
 even_num = 0
 for i in range(10):
-    while True:
-        try:
-            num = int(input(f"Enter number {i+1}: "))
-            nums.append(num)
-            break
-        
-        except ValueError: 
-            print("Please enter an integer.")
-            continue
+    num = int(input(f"Enter number {i+1}: "))
+    nums.append(num)
 
 for num in nums:
     if num%2 == 0:
